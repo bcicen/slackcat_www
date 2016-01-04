@@ -108,7 +108,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 /* apply a natural box layout model to all elements */
 *, *:before, *:after { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
 
-body { background: #2ab8ac; }
+body { background: #1d1d1d; }
 
 .elements { list-style: none; }
 .elements li { width: 100px; height: 100px; background-color: green; display: inline-block; }
