@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>Computers For Girls : About Us  </title>
+		<link href='http://fonts.googleapis.com/css?family=Gentium+Basic' rel='stylesheet' type='text/css'>
+		<link href='http://fonts.googleapis.com/css?family=Dancing+Script' rel='stylesheet' type='text/css'>
+		<link href='http://fonts.googleapis.com/css?family=Francois+One' rel='stylesheet' type='text/css'>
+		<link href='http://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
+		<link href='http://fonts.googleapis.com/css?family=Abel' rel='stylesheet' type='text/css'>
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+		<link rel="stylesheet" type="text/css" href="css/onepage-scroll.css">
+		<link rel="stylesheet" type="text/css" href="css/prism.css">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+	</head>
+	<body>
+		<div class="ghfloat"><a href="https://github.com/vektorlab/slackcat"><i class="fa fa-3x fa-github"></i></a></div>
+		<div class="main">
+			<section class="section home midnight" style="background-image: url('img/grid.png'); background-repeat: repeat">
+				<img src="img/logo.png"\>
+				<h1>Pipe command output and upload files to Slack from your terminal!</h1>
+				<br>
+				<img class="demo" src="img/demo.gif"\>
+				<a class="arrow"></a>
+			</section>
+
+		</div>
+
+		<script src="js/jquery-latest.min.js"></script>
+		<script type="text/javascript" src="js/jquery.onepage-scroll.min.js"></script>
+
+		<script type="text/javascript">
+$(document).ready(function(){
+	$(".main").onepage_scroll({
+		sectionContainer: "section",
+		easing: "ease",
+		animationTime: 1000,
+		pagination: true,
+		updateURL: false,  
+		beforeMove: function(index) {},
+		afterMove: function(index) {},
+		loop: false,
+		keyboard: true,        
+		responsiveFallback: false
+	});
+	$('.arrow').click(function(){
+		$(".main").moveDown();
+	})
+
+}) // Ready
+		</script>
+	</body>
+</html>
