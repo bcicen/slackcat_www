@@ -23,7 +23,7 @@ $(document).ready(function() {
   var params = getParameters();
 	if (jQuery.isEmptyObject(params)) {
 		failed('something broke');
-	} else if (jQuery.inArray("error", params)) {
+	} else if ("error" in params) {
 		failed('Slack authentication error: ' + params.error);
 	} else {
     $.ajax("http://api.vektor.nyc/slackcat", {
