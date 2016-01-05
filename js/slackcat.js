@@ -37,8 +37,8 @@ $(document).ready(function() {
     .done(function(token) {
       var t1 = document.createElement('h2')
         t2 = document.createElement('h1')
-        t1.innerHTML = 'use the below token to complete Slackcat setup:'
-        t2.innerHTML = token
+        t1.innerHTML = 'Success! You can now create your Slackcat config file:'
+        t2.innerHTML = 'echo "' + token + '" > ~/.slackcat'
         $('#token-box').append(t1);
       $('#token-box').append(t2);
     });
