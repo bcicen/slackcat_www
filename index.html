@@ -26,12 +26,14 @@
   </head>
   <body>
     <div class="ghfloat">
-      <a href="https://github.com/vektorlab/slackcat"><i class="fa fa-3x fa-github"></i></a></div>
+      <a href="https://slack.com/oauth/authorize?scope=channels%3Aread+groups%3Aread+im%3Aread+chat%3Awrite%3Auser+files%3Awrite%3Auser&client_id=7065709201.17699618306">
+        <img src="https://platform.slack-edge.com/img/add_to_slack.png" srcset="https://platform.slack-edge.com/img/add_to_slack.png 1x, https://platform.slack-edge.com/img/add_to_slack@2x.png 2x">
+      </a>
+    </div>
     <div class="main">
       <section class="section home midnight grid">
         <a href="http://slackcat.chat"><img class="logo" src="../img/logo.png"\></a>
         <h1>Pipe command output and upload files to Slack from your terminal!</h1>
-        <br>
         <img id ="demo" class="demo" src="img/demo.gif"/>
         <a class="scroll-down" href="#get-started">
           <i class="fa fa-arrow-circle-down"></i>
@@ -40,10 +42,9 @@
       </section>
 
       <section id="get-started" class="section midnight">
-        <br>
         <h1>Get Started</h1>
-        <br><hr>
-        <p>Download the latest build for your platform:</p>
+        <hr>
+        <p>&#8226; Download the latest build for your platform:</p>
         <p>Linux:</p>
         <pre class="code">
 wget https://github.com/vektorlab/slackcat/releases/download/v0.7/slackcat-0.7-linux-amd64 -O slackcat
@@ -54,14 +55,17 @@ sudo chmod +x /usr/local/bin/slackcat</pre>
 curl -sLo slackcat https://github.com/vektorlab/slackcat/releases/download/v0.7/slackcat-0.7-darwin-amd64
 sudo mv slackcat /usr/local/bin/
 sudo chmod +x /usr/local/bin/slackcat</pre>
-        <p>Create a Slack token request with:</p>
+        <p>&#8226; Use the "Add to Slack" button on this page, or create a Slack token request with:</p>
         <pre class="code">slackcat --configure</pre>
-        <p>and add the returned token to your ~/.slackcat config file. That's it!</p>
+        <p>&#8226; Add the returned token to your ~/.slackcat config file. That's it!</p>
         <br>
       </section>
       <section class="section connect midnight grid">
-        <br>
         <h1>Get Connected</h1>
+        <a href="https://github.com/vektorlab/slackcat">
+          <i class="fa fa-4x fa-github"></i>
+          <p>Github</p>
+        </a>
         <br>
         <p>Have a suggestion or feature request? Feel free to submit a Github issue <a href="https://github.com/vektorlab/slackcat/issues">here</a></p>
         <br>
