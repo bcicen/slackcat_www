@@ -28,8 +28,7 @@ text-align: center;}
 }
 
 .logo, .demo {
-  max-width: 90%;
-  padding-bottom: 32px;
+  max-width: 80%;
   margin: auto;
   margin-top: 3.5em;
 }
@@ -48,7 +47,7 @@ text-align: center;}
 
 .main h1 {
   font-size: 3em;
-  padding: .5em 0 .3em 0;
+  padding: .3em 0 .3em 0;
 }
 
 .main h2 {
@@ -198,7 +197,7 @@ body { background: #1d1d1d; font-family: 'Abel'; }
   margin-top: -1.3em;
 }
 
-.home { width: 100%; position: relative; text-align: center; height: 100vh;}
+.home { width: 100%; position: relative; text-align: center; height: 100vh; min-height: 960px;}
 .home h1, .home h2, .home h4 { position: relative; color: #DEDEDE; font-family: 'Abel', serif;}
 .home h4 { margin-top: 10px; }
 
@@ -318,9 +317,16 @@ body { background: #1d1d1d; font-family: 'Abel'; }
 }
 
 @media only screen and (max-width: 900px) {
+  .scroll-down {
+    bottom: 30px;
+    font-size: 30px;
+  }
+  .home { min-height: 700px;}
+
   .logo, .demo {
     margin-top: 1.5em;
   }
+
   .logo {
     padding-bottom: 12px;
   }
@@ -350,4 +356,8 @@ body { background: #1d1d1d; font-family: 'Abel'; }
     max-width: 95%;
   }
 
+}
+
+@media only screen and (max-width: 768px) {
+  .home { min-height: 550px;}
 }
