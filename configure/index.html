@@ -3,20 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <title>Slackcat Auth</title>
-    <link href='http://fonts.googleapis.com/css?family=Gentium+Basic' rel='stylesheet' type='text/css'>
-    <link href='http://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
-    <link href='http://fonts.googleapis.com/css?family=Abel' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
-    <link rel="stylesheet" type="text/css" href="../css/prism.css">
-    <link rel="stylesheet" type="text/css" href="../css/style.css">
-  </head>
-  <body>
-    <div id="auth" class="home grid">
-      <div class="main">
-      </div>
-    </div>
     <script src="../js/jquery-latest.min.js"></script>
-    <script src="../js/slackcat.js"></script>
     <script>
 $(document).ready(function() {
   var scope = 'channels%3Aread+groups%3Aread+im%3Aread+users%3Aread+chat%3Awrite%3Auser+files%3Awrite%3Auser',
@@ -24,5 +11,5 @@ $(document).ready(function() {
   window.location = 'https://slack.com/oauth/authorize?scope=' + scope + '&client_id=' + clientId
 });
     </script>
-  </body>
+  </head>
 </html>
