@@ -29,6 +29,7 @@ text-align: center;}
 
 .logo, .demo {
   max-width: 80%;
+  width: 800px;
   margin: auto;
   margin-top: 3.5em;
 }
